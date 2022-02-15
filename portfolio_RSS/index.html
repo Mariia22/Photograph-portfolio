@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header container">
+    <a href="#">
+      <svg class="header__logo">
+        <use xlink:href="./assets/svg/sprite.svg#logo"></use>
+      </svg>
+    </a>
+    <nav class="header__menu">
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__link" href="#skills" data-language="skills">Skills</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#portfolio" data-language="portfolio">Portfolio</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#video" data-language="video">Video</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#price" data-language="price">Price</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#contacts" data-language="contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__language">
+      <div class="header__language__label label-1 header__language-active">
+        <input id="label-1" type="radio" name="language" value="en" checked>
+        <label for="label-1">EN</label>
+      </div>
+      <span class="header__language__divider">/</span>
+      <div class="header__language__label label-2">
+        <input id="label-2" type="radio" name="language" value="ru">
+        <label for="label-2">RU</label>
+      </div>
+    </div>
+    <div class="header__theme"></div>
+    <div class="header__icon">
+      <span class="header__line"></span>
+      <span class="header__line"></span>
+      <span class="header__line"></span>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <div class="hero__information">
+        <h1 class="hero__information__title" data-language="hero-title">Alexa Rise</h1>
+        <p class="hero__information__text" data-language="hero-text">Save sincere emotions, romantic feelings and happy
+          moments of life together
+          with professional photographer
+          Alexa Rise</p>
+        <button class="section__btn hero__btn" data-language="hire">Hire me</button>
+      </div>
+    </section>
+    <section class="skills section" id="skills">
+      <div class="section__title__wrap">
+        <h2 class="section__title" data-language="skills">Skills</h2>
+      </div>
+      <div class="skills__list">
+        <div class="skills__item">
+          <h3 class="skills__title" data-language="skill-title-1">Digital photography</h3>
+          <p class="skills__text" data-language="skill-text-1">High-quality photos in the studio and on the nature</p>
+        </div>
+        <div class="skills__item">
+          <h3 class="skills__title" data-language="skill-title-2">Video shooting</h3>
+          <p class="skills__text" data-language="skill-text-2">Capture your moments so that they always stay with you
+          </p>
+        </div>
+        <div class="skills__item">
+          <h3 class="skills__title" data-language="skill-title-3">Retouch</h3>
+          <p class="skills__text" data-language="skill-text-3">I strive to make photography surpass reality</p>
+        </div>
+        <div class="skills__item">
+          <h3 class="skills__title" data-language="skill-title-4">Audio</h3>
+          <p class="skills__text" data-language="skill-text-4">Professional sounds recording for video, advertising,
+            portfolio</p>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio section" id="portfolio">
+      <div class="section__title__wrap">
+        <h2 class="section__title" data-language="portfolio">Portfolio</h2>
+      </div>
+      <div class="portfolio__buttons">
+        <button class="portfolio__btn" data-season="winter" data-language="winter">Winter</button>
+        <button class="portfolio__btn" data-season="spring" data-language="spring">Spring</button>
+        <button class="portfolio__btn" data-season="summer" data-language="summer">Summer</button>
+        <button class="portfolio__btn portfolio__btn-active" data-season="autumn" data-language="autumn">Autumn</button>
+      </div>
+      <div class="portfolio__images">
+        <img class="portfolio__img" src="assets/img/autumn/1.jpg" alt="Work example" width="450" height="560" />
+        <img class="portfolio__img" src="assets/img/autumn/2.jpg" alt="Work example" width="450" height="560" />
+        <img class="portfolio__img" src="assets/img/autumn/3.jpg" alt="Work example" width="450" height="560" />
+        <img class="portfolio__img" src="assets/img/autumn/4.jpg" alt="Work example" width="450" height="560" />
+        <img class="portfolio__img" src="assets/img/autumn/5.jpg" alt="Work example" width="450" height="560" />
+        <img class="portfolio__img" src="assets/img/autumn/6.jpg" alt="Work example" width="450" height="560" />
+      </div>
+    </section>
+    <section class="video section" id="video">
+      <div class="section__title__wrap video__title">
+        <h2 class="section__title" data-language="video">Video</h2>
+      </div>
+      <div class="video__container">
+        <div class="video__poster"></div>
+        <svg class="video__btn">
+          <use xlink:href="./assets/svg/sprite.svg#video"></use>
+        </svg>
+        <video class="video__player" src="assets/video/video.mp4"></video>
+        <div class="video__controls controls">
+          <div class="controls__left">
+            <div class="controls__play controls__play__icon"></div>
+            <div class="controls__play__time">
+              <span class="controls__play__currentTime">00:00</span>
+              <span>/</span>
+              <span class="controls__play__duration"></span>
+            </div>
+            <input class="controls__progress" type="range" min="0" max="100" step="1" value="0">
+          </div>
+          <div class="controls__right">
+            <div class="controls__mute controls__unmute__icon"></div>
+            <input class="controls__volume__progress" type="range" min="0" max="100" step="1" value="50">
+            <div class="controls__resize controls__resize__increase"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="price section" id="price">
+      <div class="section__title__wrap">
+        <h2 class="section__title" data-language="price">Price</h2>
+      </div>
+      <div class="price__card__list">
+        <div class="price__card">
+          <h3 class="price__title" data-language="standard">Standard</h3>
+          <span class="price__value">500$</span>
+          <div class="price__text__list">
+            <span class="price__text" data-language="price-description-1-span-1">One location</span>
+            <span class="price__text" data-language="price-description-1-span-2">120 photos in color</span>
+            <span class="price__text" data-language="price-description-1-span-3">12 photos in retouch</span>
+            <span class="price__text" data-language="price-description-1-span-4">Readiness 2-3 weeks</span>
+            <span class="price__text" data-language="price-description-1-span-5">Make up, visage</span>
+          </div>
+          <button class="section__btn price__btn" data-language="order">Order shooting</button>
+        </div>
+        <div class="price__card">
+          <h3 class="price__title" data-language="premium">Premium</h3>
+          <span class="price__value">700$</span>
+          <div class="price__text__list">
+            <span class="price__text" data-language="price-description-2-span-1">One or two locations</span>
+            <span class="price__text" data-language="price-description-2-span-2">200 photos in color</span>
+            <span class="price__text" data-language="price-description-2-span-3">20 photos in retouch</span>
+            <span class="price__text" data-language="price-description-2-span-4">Readiness 1-2 weeks</span>
+            <span class="price__text" data-language="price-description-2-span-5">Make up, visage</span>
+          </div>
+          <button class="section__btn price__btn" data-language="order">Order shooting</button>
+        </div>
+        <div class="price__card">
+          <h3 class="price__title" data-language="gold">Gold</h3>
+          <span class="price__value">1000$</span>
+          <div class="price__text__list">
+            <span class="price__text" data-language="price-description-3-span-1">Three locations or more</span>
+            <span class="price__text" data-language="price-description-3-span-2">300 photos in color</span>
+            <span class="price__text" data-language="price-description-3-span-3">50 photos in retouch</span>
+            <span class="price__text" data-language="price-description-3-span-4">Readiness 1 week</span>
+            <span class="price__text" data-language="price-description-3-span-5">Make up, visage, hairstyle</span>
+          </div>
+          <button class="section__btn price__btn" data-language="order">Order shooting</button>
+        </div>
+      </div>
+    </section>
+    <section class="contacts section" id="contacts">
+      <div class="contacts__container">
+        <div class="contacts__info">
+          <h2 class="contacts__title" data-language="contact-me">Contact me</h2>
+          <form class="contacts__form" action="#" method="post">
+            <input class="contacts__input" type="email" placeholder="E-mail" id="email" name="email"
+              data-language="email" required>
+            <input class="contacts__input" type="tel" placeholder="Phone" id="phone" name="phone" data-language="phone"
+              required>
+            <textarea class="contacts__textarea" placeholder="Message" data-language="message"></textarea>
+            <button class="section__btn contact__btn" data-language="send-message">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer container">
+    <div class="footer__left_container">
+      <span class="footer__left__text">&copy;</span>
+      <span class="footer__left__text">2022</span>
+      <a class="footer__git" href="https://github.com/Mariia22">github</a>
+    </div>
+    <div class="footer__rss__container">
+      <a href="https://rs.school/js-stage0/">
+        <div class="footer__rss__icon"></div>
+      </a>
+      <a class="footer__rss" href="https://rs.school/js-stage0/">Rolling Scopes School</a>
+    </div>
+    <ul class="footer__icons">
+      <li class="footer__icon">
+        <a class="footer__link" href="http://www.instagram.com" aria-label="Link to Instagram">
+          <svg class="footer__icon__img">
+            <use xlink:href="./assets/svg/sprite.svg#inst"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer__icon">
+        <a class="footer__link" href="http://www.facebook.com" aria-label="Link to Facebook">
+          <svg class="footer__icon__img">
+            <use xlink:href="./assets/svg/sprite.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer__icon">
+        <a class="footer__link" href="http://www.twitter.com" aria-label="Link to Twitter">
+          <svg class="footer__icon__img">
+            <use xlink:href="./assets/svg/sprite.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer__icon">
+        <a class="footer__link" href="http://www.pinterest.com" aria-label="Link to Pinterest">
+          <svg class="footer__icon__img">
+            <use xlink:href="./assets/svg/sprite.svg#pinterest"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <script type="module" src="js/index.js"></script>
+  <script type="module" src="js/video.js"></script>
+</body>
+
+</html>
